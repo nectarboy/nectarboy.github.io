@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+
+<html>
+
+	<head>
+
+		<title>brainfuck interpreter</title>
+		<meta charset='utf-8'>
+
+		<link rel="stylesheet" href="brainfuck.css">
+
+	</head>
+
+	<body>
+
+		<script src='brainfuck.js'></script>
+
+		<h1>brainfuck interpeter</h1>
+		<hr>
+
+		<div id='bfcontainer'>
+
+			<h2>code:</h2>
+			<textarea id='bfcode'>>++++++++[<+++++++++>-]<.>++++[<+++++++>-]<+.+++++++..+++.>>++++++[<+++++++>-]<++.------------.>++++++[<+++++++++>-]<+.<.+++.------.--------.>>>++++[<++++++++>-]<+.</textarea>
+
+			<!-- <h2>input:</h2>
+			<textarea id='bfinput'></textarea> -->
+
+			<h2>output:</h2>
+			<pre id='bfoutput'>(output)</pre>
+
+			<button id='bfstart'>start</button>
+
+		</div>
+
+		<script>
+
+			window.onload = function () {
+
+				var bfcode = document.getElementById ('bfcode');
+				// var bfinput = document.getElementById ('bfinput');
+				var bfoutput = document.getElementById ('bfoutput');
+				var bfstart = document.getElementById ('bfstart');
+
+				bfstart.onclick = function () {
+
+					interpretbf (bfcode.value, bfoutput);
+
+				};
+
+			};
+
+		</script>
+
+	</body>
+
+</html>
