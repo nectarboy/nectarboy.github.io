@@ -1,0 +1,208 @@
+/* html */
+
+html, body {
+
+	background: #ffecdb;
+
+	margin: 0px;
+	padding: 5px;
+
+	height: 100%;
+
+}
+
+/* font */
+
+@font-face {
+
+	font-family: silkscreen;
+	src: url(silkscreen.ttf);
+
+}
+
+/* styling */
+
+* {
+
+	outline: none;
+
+}
+
+a {
+
+	text-decoration: none;
+
+}
+
+h1, h2, h3 {
+
+	padding: 7px;
+
+	width: 50%;
+
+	border-radius: 8px;
+	border-bottom-right-radius: 20px;
+
+	background: #d3957e;
+
+	font-family: silkscreen;
+
+}
+
+hr {
+
+	width: 95%;
+	height: 3px;
+
+	border-radius: 3px;
+
+	background: #d3957e;
+
+	border: none;
+
+}
+
+.innercontainer {
+
+	padding: 15px;
+	margin: 5px;
+
+	width: 90%;
+
+	border-radius: 18px;
+	border-bottom-right-radius: 54px;
+
+	background: #e5db8e;
+
+}
+
+.paddingdiv {
+
+	padding: 10px;
+	padding-left: 20px;
+
+}
+
+.description {
+
+	padding: 8px;
+
+	background: #ffecdb;
+	border-radius: 10px;
+
+	font-family: silkscreen;
+
+}
+
+.gone {
+
+	display: none;
+
+}
+
+/* chip-8 */
+
+.slider {
+
+	-webkit-appearance: none;
+	appearance: none;
+
+	width: 40%;
+	height: 18px;
+
+	border: 2px solid #d3957e;
+	border-radius: 10px;
+
+	background: #ffecdb;
+
+}
+.slider:active {
+
+	background: white;
+
+}
+.slider::-webkit-slider-thumb {
+
+	-webkit-appearance: none;
+	appearance: none;
+
+	width: 22px;
+	height: 11px;
+
+	border-radius: 5px;
+
+	background: #d3957e;
+
+}
+.slider::-moz-slider-thumb {
+
+	-webkit-appearance: none;
+	appearance: none;
+
+	width: 22px;
+	height: 11px;
+
+	border-radius: 5px;
+
+	background: #d3957e;
+
+}
+
+
+.screen {
+
+	width: 320px;
+
+	background: #54755e;
+
+	image-rendering: pixelated;
+	webkit-image-rendering: pixelated;
+	moz-image-rendering: pixelated;
+	ms-image-rendering: pixelated;
+
+	border: 6px solid black;
+	border-bottom: 24px solid black;
+
+	border-radius: 4px;
+
+}
+
+.button {
+
+	display: block;
+
+	width: 120px;
+	height: 60px;
+
+	font-family: silkscreen;
+
+	text-align: center;
+	line-height: 60px;
+
+	border-radius: 6px;
+	border-bottom-right-radius: 18px;
+
+	background: #ffecdb;
+	color: #d3957e;
+
+}
+
+.button:hover {
+
+	background: white;
+
+}
+
+.dragdrop {
+
+	display: flex;
+
+	width: 250px;
+	height: 200px;
+
+	align-items: center;
+	justify-content: center;
+
+	border: 2px dashed #d3957e;
+
+}
