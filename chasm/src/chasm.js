@@ -322,7 +322,7 @@ const _Assemble = function _Assemble (asm, hexout) {
 			if (currline.startsWith (kwchar)) {
 
 				currline = currline.slice (1); // Remove keyword start
-				var kw = getKeyword (currline);z
+				var kw = getKeyword (currline);
 
 				if (kw !== keywords.data)
 					continue;
